@@ -11,12 +11,15 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentynineteenenfant
 */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
-// Importer le mixin
-@import "_mixin.scss";
-// Importer l'entête
-@import "_entete.scss";
-// Importer le footer
-@import "_footer.scss";
-// Importer gutenberg
-@import "_gutenberg.scss";
+.entry .entry-title:before {
+  display: none;
+}
+
+.rayure {
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,12 @@
-@mixin rayure{
+@mixin rayure($angle:45deg, $couleur1:#606dbc, $couleur2:#465298, $distance:10px)
+{
+  .rayure {
     background: repeating-linear-gradient(
-        45deg,
-        #606dbc,
-        #606dbc 10px,
-        #465298 10px,
-        #465298 20px
+        $angle,
+        $couleur1,
+        $couleur1 $distance,
+        $couleur2 $distance,
+        $couleur2 $distance +10px
       );
+  }
 }
